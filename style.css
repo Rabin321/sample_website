@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;1,400&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    background-color: #fff;
+
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+input,button,textarea{
+    border: none;
+    outline: none;
+
+}
+
+/*nav*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+nav ul{
+    display: flex;
+}
+
+nav ul li a{
+    height: 40px;
+    line-height: 43px;
+    margin: 3px;
+    padding: 0 22px;
+    display: flex;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.6s ease-in-out;
+    color: #000000;
+
+}
+nav ul li a:hover{
+    background-color: #0181e9;
+    color: antiquewhite;
+    box-shadow: 5px 10px 30px rgba(2, 112, 255, 0.4);
+   
+}
+.active{
+    background-color: #0181e9;
+    color: antiquewhite;
+    box-shadow: 5px 10px 30px rgba(2, 112, 255, 0.4);
+
+}
+.main{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/back.jpg);
+}
+.main-heading{
+    width: 500px;
+    position: absolute;
+    left: 16%;
+    top:47%;
+    transform: translate(-16%, -47%);
+}
+.main-heading h1{
+    font-size: 45px;
+    font-weight: 900px;
+    margin: 0px;
+    letter-spacing: 3px;
+    color: rgb(0, 0, 0);
+}
+.main-btn{
+    width: 120px;
+  
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0181e9;
+    border-radius: 10px;
+    color: bisque;
+    transition: 0.6s ease-in-out;
+}
+.main-btn:hover{
+    box-shadow: 5px 10px 30px rgba(2, 112, 255, 0.4);
+}
+.features{
+    height: 90vh;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -100px;
+}
+.feature-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feature-box{
+background-color: #fff;
+width: 300px;
+height: 450px;
+margin: 70px;
+border-radius: 10px;
+overflow: hidden;
+position: relative;
+box-shadow: 5px 10px 30px rgba(2, 112, 255, 0.4);
+}
+
+
+.feature-box,h4{
+    margin-left: 80px;
+}
+.feature-box, p{
+    margin-left: 10px;
+}
+.feature-box .main-btn{
+
+    margin-left: 90px;
+}
+/* .f-text{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.about{
+     height: 110vh;
+     width: 100%;
+     box-sizing: border-box;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 50px 5% 0px 5%;
+     position: relative;
+
+}
+.about-img{
+    width: 50%;
+}
+.about-img img{
+    width: 500px;
+}
+.about-text{
+    width: 45%;
+    color: black;
+    text-align: right;
+}
+.about-text h2{
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.about-text p{
+    font-size: 1.1rem;
+    color: olive;
+    text-align: left;
+
+}
+.about-text .main-btn{
+    float: right;
+}
+
+.contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px;
+}
+.comtact-heading{
+text-align: center;
+margin: 40px 0px;
+margin-bottom: 80px;
+}
+.contact-heading h1{
+    font-size: 2.2 rem;
+    margin-left: 140px;
+}
+
+.contact form{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact form input,.contact form textarea{
+    width: 100%;
+    height: 40px;
+margin: 5px 0px;
+padding: 10px;
+background-color: rgb(213, 225, 236);
+color: #000000;
+border-radius: 5px;
+}
+.contact form textarea{
+    height: 140px;
+} 
